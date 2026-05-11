@@ -1,0 +1,13 @@
+﻿<Window x:Class="DominationGame.MovesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DominationGame"
+        mc:Ignorable="d"
+        Title="MovesWindow" Height="300" Width="300">
+    <Grid>
+        <TextBox x:Name="movesBlock" HorizontalAlignment="Left" Height="249" Margin="29,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241" ScrollViewer.CanContentScroll="True"/>
+
+    </Grid>
+</Window>

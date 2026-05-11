@@ -1,0 +1,23 @@
+﻿<Window x:Class="DominationGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DominationGame"
+        mc:Ignorable="d"
+        Title="Domination Game" Height="474.268" Width="615.376">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Start A Game" Click="MenuItemStartGame_Click" />
+            <MenuItem x:Name="moves_Menu" Header="Moves" Click="MenuItemMoves_Click" IsEnabled="False" />
+            <MenuItem Header="Exit" Click="MenuItemExit_Click"/>
+        </Menu>
+        <Grid DockPanel.Dock="Bottom" Background="#FFD8C9C9" Margin="0,1,0,-126" Height="424" VerticalAlignment="Top">
+            <Canvas x:Name="gameCanvas" HorizontalAlignment="Left" Height="404" Margin="23,10,0,0" VerticalAlignment="Top" Width="376" Background="#FFF9F9F9" MouseUp="gameCanvas_MouseUp"/>
+            <Label x:Name="playerLabel" Content="No game started yet" HorizontalAlignment="Left" Margin="414,42,0,0" VerticalAlignment="Top" Width="183" Height="29"/>
+            <Label x:Name="xCoordinateLabel" Content="X Coordinate" HorizontalAlignment="Left" Margin="414,84,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="yCoordinateLabel" Content="Y Coordinate" HorizontalAlignment="Left" Margin="414,115,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="cellLabel" Content="" HorizontalAlignment="Left" Margin="414,146,0,0" VerticalAlignment="Top"/>
+        </Grid>
+    </DockPanel>
+</Window>
