@@ -29,7 +29,7 @@ namespace DominationGame
             //      rowIndex    = (Y - Board.Margin) / Block.Size
             //      columnIndex = (X - Board.Margin) / Block.Size
             // 5. Show "(rowIndex, columnIndex)" in cellLabel.
-            // 6. Call _board.ClaimBlocks(rowIndex, columnIndex, _currentPlayer) inside a try/catch:
+            // 6. Call _board.ClaimBlocks(rowIndex, columnIndex, _currentPlayer):
             //    On success:
             //      a. If _board.HasMoveLeftFor(_nextPlayer) is true
             //             → update playerLabel and call SwitchTurn().
@@ -57,6 +57,7 @@ namespace DominationGame
             xCoordinateLabel.Content = "X Coordinate ";
             yCoordinateLabel.Content = "Y Coordinate ";
             cellLabel.Content = "";
+            moves_Menu.IsEnabled = false;
         }
 
         private void MenuItemMoves_Click(object sender, RoutedEventArgs e)
